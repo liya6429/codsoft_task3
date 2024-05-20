@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(245, 242, 245);
+        }
+        h1{
+            color:purple;
+            padding-left: 40%;
+            padding-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input style="width: 20%; height:25px;margin-left:37%;" type="number" min="6" name="password" placeholder="Enter length of password">
+            <input style="height: 29px;" type="submit">
+        </form>
+    </div>
+</body>
+</html>
